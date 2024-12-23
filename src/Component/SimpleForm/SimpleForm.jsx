@@ -1,3 +1,7 @@
+/**
+ use form tag and onSubmit handler with event (e)
+From e access e.target.[name of the input field].value
+*/
 
 const SimpleForm = () => {
 
@@ -5,7 +9,6 @@ const SimpleForm = () => {
 
     const handleSubmit = e =>{
         e.preventDefault();
-        console.log("form Submitted");
         console.log(e.target.name.value);
         console.log(e.target.email.value);
         console.log(e.target.phone.value);
