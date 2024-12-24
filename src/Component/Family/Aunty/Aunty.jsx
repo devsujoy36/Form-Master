@@ -17,7 +17,7 @@ const Aunty = () => {
         <Child name={"Mistu"} />
       </section>
       <div className="flex justify-center items-center">
-        <button onClick={() => setMoney(money + 1000)} className={btnStyle}>Add 1000Tk</button>
+        <button onClick={() => setMoney(money+1000)} className={btnStyle}>Add 1000Tk</button>
       </div>
     </div>
   )
