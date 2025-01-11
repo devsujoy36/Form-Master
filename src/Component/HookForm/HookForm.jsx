@@ -10,15 +10,15 @@ const HookForm = () => {
     console.log(name);
   }
 
-  const [name, handleChange] = useInputState('rojoni')
+  const [name, handleChange] = useInputState('Sujoy')
 
   return (
-    <div className="flex justify-center bg-black text-white items-center h-[100vh]">
-      <form action="" onSubmit={handleSubmit} className="border-2 flex flex-col gap-2 border-white p-10 rounded-xl">
+    <div className="flex justify-center  items-center h-[100vh]">
+      <form action="" onSubmit={handleSubmit} className="border-2 flex flex-col gap-2  p-10 rounded-xl">
 
-        <input type="text" value={name} onChange={handleChange} name="name" placeholder="Name" className="border-white text-black border p-2 rounded-md" />
-        <input type="email" name="email" placeholder="Email" className="border-white border p-2 rounded-md" />
-        <input type="text" name="phone" placeholder="phone" className="border-white border p-2 rounded-md" />
+        <input type="text" value={name} onChange={handleChange} name="name" placeholder="Name" className=" text-black border p-2 rounded-md" />
+        <input type="email" name="email" placeholder="Email" className=" border p-2 rounded-md" />
+        <input type="text" name="phone" placeholder="phone" className=" border p-2 rounded-md" />
 
         <input type="submit" className={btnStyle} />
       </form>

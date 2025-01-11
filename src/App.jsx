@@ -1,19 +1,19 @@
 import './App.css'
 import Grandpa from './Component/Family/Grandpa/Grandpa'
-// import ReUsableForm from './Component/ReUsableForm/ReUsableForm'
-// import HookForm from './Component/HookForm/HookForm'
+import ReUsableForm from './Component/ReUsableForm/ReUsableForm'
+import HookForm from './Component/HookForm/HookForm'
 // import RefFrom from './Component/RefForm/RefFrom'
 // import SimpleForm from './Component/SimpleForm/SimpleForm'
 // import StateFullForm from './Component/StateFullForm/StateFullForm'
 
 function App() {
 
-  // const handleSignupSubmit = (data) => {
-  //   console.log('Sign Up: ', data);
-  // }
-  // const handleUpdateSubmit = (data) => {
-  //   console.log('Update: ', data);
-  // }
+  const handleSignupSubmit = (data) => {
+    console.log('Sign Up: ', data);
+  }
+  const handleUpdateSubmit = (data) => {
+    console.log('Update: ', data);
+  }
 
   return (
     <>
@@ -27,9 +27,9 @@ function App() {
       {/* Form Handling Using useRef  */}
       {/* <RefFrom /> */}
 
-      {/* <HookForm/> */}
+      <HookForm/>
 
-      {/* <ReUsableForm handleSubmit={handleSignupSubmit} formTitle={'Sign Up'} submitBtnText={'Sign Up'} >
+      <ReUsableForm handleSubmit={handleSignupSubmit} formTitle={'Sign Up'} submitBtnText={'Sign Up'} >
         <div>
           <h1>Sign Up</h1>
           <p>Please Sign Up Right Now</p>
@@ -41,7 +41,7 @@ function App() {
           <h1>Update Profile</h1>
           <p>Always Keep Your Profile Updated</p>
         </div>
-      </ReUsableForm> */}
+      </ReUsableForm>
       <div className='flex justify-center items-center h-[70vh] border'>
         <Grandpa />
 
